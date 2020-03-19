@@ -11,7 +11,7 @@ sudo apt-get install a2ps t2html html2ps ghostscript
 Clone repo:
 
 ```bash
-clone git@github.com:patrikap/test_pdf_converter.git ~/pdf_converter
+git clone https://github.com/patrikap/test_pdf_converter.git ~/pdf_converter
 ```
 
 Allow execute file
@@ -20,7 +20,7 @@ Allow execute file
 chmod +x ~/pdf_converter/to_pdf.sh
 ```
  
-Create symlink to `/usr/local/bin` 
+Create symlink to `/usr/bin` 
 
 ```bash
 sudo ln -s ~/pdf_converter/to_pdf.sh /usr/bin/to_pdf
@@ -32,10 +32,16 @@ sudo ln -s ~/pdf_converter/to_pdf.sh /usr/bin/to_pdf
 to_pdf *path_to_files*
 ```
 
-### Changelog
+## Uninstall
+
+ ```bash
+ rm -rf /usr/bin/to_pdf
+ ```
+
+## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
 
-# Author
+## Author
  
 [Patrikap](https://github.com/patrikap)

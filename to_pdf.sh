@@ -1,7 +1,6 @@
 #!/bin/bash
 ### DIRECTORIES
 PROJECT_PATH=`pwd`
-LOG_FILE="$PROJECT_PATH/$0.log"
 ### WRITE LOG
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -13,7 +12,6 @@ function log {
     else
         echo -e "${DTM}\t${1}\t\t${RED}ERROR${NORMAL}" 1>&2
     fi
-    echo "${DTM}    ${1}" >> ${LOG_FILE}
 }
 ### CONVERT FUNCTION
 function convert {
